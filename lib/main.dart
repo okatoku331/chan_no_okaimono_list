@@ -1,6 +1,7 @@
-import 'package:chan_no_okaimono_list/main_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import 'main_model.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,13 +13,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home:  ChangeNotifierProvider<MainMdel>(
-        create: (_) => MainMdel(),
+      home:  ChangeNotifierProvider<MainModel>(
+        create: (_) => MainModel(),
         child: Scaffold(
           appBar: AppBar(
             title: Text('コリアンダー'),
           ),
-          body: Consumer<MainMdel>(builder: (context, model, child) {
+          body: Consumer<MainModel>(builder: (context, model, child) {
               return Center(
                 child: Column(
                   children: [
