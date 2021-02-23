@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(
-                        model.KboyText,
+                        model.kboyTtext,
                         style: TextStyle(
                           fontSize: 30,
                         )
